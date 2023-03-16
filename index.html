@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanila JS | Palindome</title>
+    <link rel="icon" href="javascript-logo.png" type="image/png" sizes="16x16">
+    <script src="https://kit.fontawesome.com/8423fdd3e5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <h2>FORM TO CHECK IF A WORD IS PALINDOME</h2>
+    <div class="answer">
+        <form>
+            <input type="text" ID='palindome' placeholder='Please Input Something' value="">
+            <br>
+        </form>
+        <button type="submit" onclick="checkWord()">Submit</button>
+    </div>
+
+    <section>
+        <div hidden id="wrong">
+            <i class='fas fa-thumbs-down' style='font-size:84px;color:#fff;padding-bottom: 15px;'></i>
+            <h1>You Wrong, Bros.</h1>
+            <p>Try Again, Sir.</p>
+        </div>
+       
+        <div hidden id="invalid">
+            <i class='fas fa-angry' style='font-size:84px;color:red;padding-bottom: 15px;'></i>
+            <h1>Bros, Ojoor.</h1>
+            <p>Give us answer.</p>
+        </div>
+
+        <div hidden id="right">
+            <i class='fas fa-thumbs-up' style='font-size:84px;color:#fff;padding-bottom: 10px;'></i>
+            <h1>You Get am, Boss.</h1>
+            <p>You brain dey hot o.</p>
+        </div>
+    </section>
+    
+
+    <script>
+
+        function checkWord() {
+            const palindome = document.getElementById('palindome').value
+            const invalid = document.getElementById('invalid')
+            const wrong = document.getElementById('wrong')
+            const right = document.getElementById('right')
+
+            const forwardWord = palindome.split("");
+            const reverseWord = forwardWord.reverse();
+            const joinReverseWord = reverseWord.join("");
+
+        
+            if (palindome === "") {
+                invalid.hidden = false;
+            } else if (palindome === joinReverseWord) {
+                right.hidden = false;
+            } else {
+                wrong.hidden = false;
+            }
+        }
+        
+        checkWord()
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin-top: 50px;
+    font-size: larger;
+}
+
+body h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#invalid {
+    margin: auto;
+    color: red;
+}
+
+section {
+    height: 200px;
+    display: flex;
+    column-gap: normal; 
+}
+
+#wrong {
+    color: aquamarine;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 100px;
+    border-radius: 20px;
+    background-color: lawngreen;
+    color: #fff;
+    margin: auto; 
+}
+
+#right {
+    color: blueviolet;
+    padding: 50px 100px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 20px;
+    background-color: darkmagenta;
+    color: #fff;
+}
+
+.answer {
+    height: 200px;
+    width: 30%;
+    background-color: pink;
+    margin: auto;
+    align-items: center;
+    color: blue;
+    justify-content: center;
+    border-radius: 20px;
+    margin-bottom: 5px;
+}
+
+button  {
+    height: 35px;
+    width: 80px;
+    justify-content: center;
+    background-color: blue;
+    border: none;
+    border-radius: 2px;
+    margin-top: 15px;
+    color: #fff;
+    margin: 5% 40%;
+}
+
+input {
+    width: 80%;
+    height: 40px;
+    padding-left: 15PX;
+    margin: 0 7.5%;
+}
+
+form {
+    padding-top: 75px;
+}
+
+@media only screen and (max-width: 995px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        margin-top: 5px;
+        font-size: larger;
+    }
+
+    body h2 {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    section {
+        height: 200px;
+        display: block;
+        column-gap: normal; 
+    }
+
+    #invalid {
+        margin-left: 40%;
+        color: red;
+    }
+
+    #wrong {
+        color: aquamarine;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 100px;
+        border-radius: 20px;
+        margin: 1%;
+        background-color: lawngreen;
+        color: #fff;
+    }
+
+    #right {
+        color: blueviolet;
+        padding: 30px 100px;
+        align-items: center;
+        justify-content: center;
+        margin: 2%;
+        border-radius: 20px;
+        background-color: darkmagenta;
+        color: #fff;
+    }
+
+    .answer {
+        height: 200px;
+        width: 95%;
+        background-color: pink;
+        margin: auto;
+        align-items: center;
+        color: blue;
+        justify-content: center;
+        border-radius: 20px;
+        margin-bottom: 5px;
+    }
+
+    button  {
+        height: 35px;
+        width: 80px;
+        justify-content: center;
+        background-color: blue;
+        border: none;
+        border-radius: 2px;
+        margin-top: 15px;
+        color: #fff;
+        margin: 5% 40%;
+    }
+
+    input {
+        width: 80%;
+        height: 40px;
+        padding-left: 15PX;
+        margin: 0 7.5%;
+    }
+
+    form {
+        padding-top: 75px;
+    }
+}
