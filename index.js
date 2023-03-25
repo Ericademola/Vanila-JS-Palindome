@@ -16,4 +16,5 @@ function checkWord() {
     } else {
         wrong.hidden = false;
     }
+
 }
