@@ -6,6 +6,10 @@
 body {
     margin-top: 50px;
     font-size: larger;
+
+    background: url(nature-flower.jpg) no-repeat center center /cover;
+    height: 100vh;
+    position: relative;
 }
 
 body h2 {
